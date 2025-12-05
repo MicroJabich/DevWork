@@ -16,24 +16,61 @@
         url("Materials/fonts/OpenSans-Bold.ttf");
 }
 
+.page{
+    height: 100%;
+}
+
 .page-body {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #000;
+    min-height: 100%;
+    margin: 0;
+}
+
+.page-header{
+    padding: 20px 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.text-tarif{
+    width: 50%;
 }
 
 .intro {
+    min-height: 610px;
     background-image: url("Materials/img/intro.png");
     background-size: cover;
     background-position: center;
+    padding-top: 180px;
+    padding-bottom: 120px;
     color: #fff;
     box-sizing: border-box;
+}
+.intro .container{
+    padding-right: 550px;
 }
 
 .intro-title {
     font-size: 50px;
     font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.intro-text-wrapper p {
+    margin: 0;
+}
+
+.intro-text-wrapper p:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .page-content {
@@ -50,24 +87,54 @@
     top: 0;
     right: 0;
     bottom: 0;
+    width: 99999px;
 }
 
 .program-title {
     font-size: 40px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.program-text-wrapper p{
+    margin: 0;
+}
+
+.program-text-wrapper p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.program-row{
+    margin-top: 30px;
 }
 
 .program-image-wrapper {
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
 .program-image {
+    width: 100%;
+    height: 100%;
     display: block;
     object-fit: cover;
 }
 
 .program-subtitle {
+    margin: 0;
+    margin-bottom: 20px;
     font-size: 24px;
+}
+
+.prograg-list{
+    margin: 0;
+}
+
+.prograg-list li:not(:last-child){
+    margin-bottom: 10px;
 }
 
 .auditory {
@@ -80,35 +147,77 @@
 }
 
 .auditory-title {
+    margin: 0;
+    margin-bottom: 30px;
     font-size: 40px;
     font-weight: 700;
 }
 
 .auditory-image-wrapper {
+    height: 160px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
 .auditory-image {
+    width: 100%;
+    height: 100%;
     display: block;
     object-fit: cover;
 }
 
+.auditory-bottom{
+    margin-top: 30px;
+}
+
+.auditory-list{
+    margin: 0;
+}
+
 .prices-title {
+    margin: 0;
+    margin-bottom: 30px;
     font-size: 40px;
     font-weight: 700;
 }
+.prices-text-wrapper{
+    margin: 0;
+}
+
+.prices-text-wrapper p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.prices-table{
+    border-collapse: collapse;
+    margin-top: 30px;
+    width: 100%;
+}
 
 .prices-table th {
+    padding: 20px;
     font-weight: 700;
     color: #fff;
     text-align: left;
 }
 
+.prices-table th:first-child,
+.prices-table td:first-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.prices-table th:last-child,
+.prices-table td:last-child {
+    border-radius: 0 15px 15px 0;
+}
+
 .prices-table td {
+    padding: 20px;
     font-size: 16px;
 }
 
 .prices-caption {
+    margin-top: 10px;
     font-size: 14px;
     color: #9D9D9D;
 }
@@ -119,11 +228,23 @@
 }
 
 .services-title {
+    margin: 0;
+    margin-bottom: 30px;
     font-size: 40px;
     font-weight: 700;
 }
 
+.services-text-wrapper p{
+    margin: 0;
+}
+
+.services-text-wrapper p:not(:last-child){
+    margin-bottom: 10px;
+}
+
 .services-list {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -137,7 +258,10 @@
 }
 
 .services-price {
-    color: #fff;
+    margin-top: auto;
+    padding: 20px;
+    border-radius: 15px;
+    color: #000;
     font-size: 20px;
     font-weight: 700;
     white-space: nowrap;
@@ -148,7 +272,18 @@
     font-weight: 700;
 }
 
+.reviews-item{
+    border-radius: 20px;
+}
+
+.reviews-item:not(:last-child){
+    margin-bottom: 20px;
+}
+
 .reviews-item-image-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     overflow: hidden;
 }
 
@@ -157,7 +292,8 @@
 }
 
 .reviews-item-image {
-    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -165,15 +301,42 @@
     font-size: 16px;
 }
 
+.reviews-item-text-wrapper p{
+    margin: 0;
+}
+
+.reviews-item-text-wrapper p:not(:last-child){
+    margin-bottom: 10px;
+} 
+
 .reviews-item-author {
+    margin-top: 20px;
     font-size:16px;
+}
+
+.page-section.contacts {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+.contacts-content{
+    border-radius: 20px;
 }
 
 .contacts-text-wrapper {
     font-size: 16px;
 }
 
+.contacts-text-wrapper p {
+    margin: 0;
+}
+
+.contacts-text-wrapper p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 .contacts-form-bottom {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,12 +347,16 @@
 }
 
 .contacts-address {
+    margin-top: 40x;
     font: inherit;
 }
 
 .contacts-btn {
     position: relative;
     display: flex;
+    padding: 20px 40px;
+    padding-right: 80px;
+    border-radius: 15px;
     justify-content: space-between;
     color:#457d88;
     font-size: 40px;
@@ -202,6 +369,8 @@
     position: absolute;
     top: 30px;
     right: 40px;
+    width: 40px;
+    height: 40px;
     background-image: url(Materials/img/telegram.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -217,19 +386,27 @@
 }
 
 .sidebar {
-    color: #fff;
+    padding: 40px 0 40px 20px;
+    color: #000000;
 }
 
 .sidebar-title {
+    margin: 0;
+    margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
 }
 
 .sidebar-list {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
 .card-image-link {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
     display: block;
     overflow: hidden;
 }
@@ -241,9 +418,13 @@
 .card-image {
     display: block;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .card-image-title {
+    margin: 0;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 400;
 }
@@ -258,9 +439,18 @@
 }
 
 .page-footer {
+    padding: 30px 0;
     color: #000000;
+}
+
+.page-footer .container {
+    padding-right: 390px;
 }
 
 .copyright {
     text-align: center;
+}
+
+.prices-text-wrapper{
+    overflow: hidden;
 }
